@@ -1,0 +1,389 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wdth,wght@0,5..1200,100.9,900;1,5..1200,100.9,900&display=swap');
+</style>
+
+:root{
+    --main-color: #37132d;
+    --main-font:'Playfair Display',serif;
+    --secondary-font:'Roboto',sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    color: #333333;
+    
+}
+.header nav a {
+    color: #333; /* Default color */
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  }
+  
+.header nav a:hover {
+    color:black; /* Accent color */
+    border-bottom: 3px solid black; /* Underline effect */
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffe5b4; /* Light peach */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+ul li{
+    
+    display: inline;
+    font-size: 1.3rem;
+}
+ul li a{
+    text-decoration:none ;
+    margin: 10px;
+    color:#333333;
+    font-family:var(--secondary-font) ;
+    
+}
+header ul li{
+  position: relative;
+  left: 35%;
+}
+.logo{
+  font-size: 1.6rem;
+  position: relative;
+  left: -13%;
+}
+.content_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+    
+    
+}
+.header_content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    height:39%;
+
+}
+.header_heading{
+    font-size: 4rem;
+    font-family:var(--main-font);
+    
+}
+.header_sub-heading{
+    width:40%;
+    font-family:var(--secondary-font);
+    color: rgb(82, 82,82);
+    margin: auto;
+    margin-right: 28%;
+    margin-top: 10px;
+}
+.header_img-container{
+    width:60% ;
+    height: 50vh;
+    position: relative;
+    margin-top:-5%;
+    margin-left: -15%;
+    
+} 
+.img-one{
+    position: absolute;
+    /* left: 1rem; */
+    top: -8rem;
+    
+
+}
+
+.header_img{
+    width: 725px;
+    height: 600px;
+    margin-left:-20%;
+  
+}
+.header_img {
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+.header_img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(255, 0, 0, 0.5);
+}
+.main-btn{
+    
+    padding:5px 15px;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    font-family: var(--secondary-font);
+    margin-top:4%;
+    display: inline-block;
+    border-radius: 5px;
+}
+.header{
+    background-color:#ffe5b4
+}
+.experience{
+    height: 90vh;
+    margin-left: 5rem;
+    margin-top: 10rem;
+    width: 35%;
+    position: relative;
+    top: 250px;
+    left: 170px;
+    
+} 
+.heagrayding{
+  color: gray;
+}
+.main-btn {
+    /* padding: 10px 20px; */
+    background-color: black;
+    color: white;
+    border:0px solid black;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .main-btn:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+/* Wrapper to hold the flip effect */
+.flip-container {
+    perspective: 1000px; /* Create 3D perspective */
+    width: 300px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    position: relative;
+  }
+  
+  /* Flipper controls the flipping action */
+  .flipper {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  /* Front side of the card */
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side when not visible */
+  }
+  
+  /* Front Image */
+  .front img, .back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Back side of the card */
+  .back {
+    transform: rotateY(180deg); /* Rotate the back image */
+  }
+  
+  /* Flip effect on hover */
+  .flip-container:hover .flipper {
+    transform: rotateY(180deg); /* Flip the card */
+  }
+  .flip-container{
+    margin-left:60%;
+    margin-top: -32%;
+    width: 500px;
+    height: 350px;
+  }
+  /* Social media */
+.social-media{
+
+    margin:5rem;
+    
+}
+.sm-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 7rem; */
+    
+}
+.follow{
+    padding: 15px;
+    background-color:black;
+    color: white;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    margin-right: 3rem;
+    text-align: center;
+}
+/* Customer part */
+.customer{
+  height:70vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: 3rem;
+}
+
+.customer-container{
+    width: 70%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: center;
+
+    
+    
+}
+
+.customer-img-container{
+    background: url(./meet.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 500px;
+    height:400px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out
+}
+.customer-img-container:hover{
+    
+    filter: grayscale(0%);
+
+}
+
+.customer_sub-heading{
+    width:450px;
+}
+
+.customer_content{
+    margin-left: 30px
+}
+.services{
+  margin-top: 8rem;
+
+}
+.services__g-headindg{
+  margin-left: 42rem;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: gray;
+
+
+}
+.services-heading{
+  margin-left: 42rem;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+
+}
+.card{
+  width: 300px;
+  height: 400px;
+  position: relative;
+  box-shadow:4px 4px 4px 4px rgb(114, 113, 113);
+  margin: 15px;
+  margin-top: 30px;
+}
+.card-img{
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size:cover;
+  background-position: top;
+}
+.img-o{
+  background-image: url(./cutting\ 1.jpg);
+  width: 100%;
+ 
+
+}
+.img-two{
+  background-image: url(./beard.jpg);
+  width: 100%;
+  
+}
+.img-three{
+  background-image: url(./shaving.jpg);
+  width:100%;
+  
+}
+.card-content{
+  transform: translate(200px);
+  text-align: center;
+  position: relative;
+  top: 210px;
+  left: -210px;
+
+}
+.card-title{
+
+  font-family: sans-serif;
+  font-weight: normal;
+  color: black;
+}
+.card-info{
+  font-family: var(--secondary-font);
+  text-align: center;
+  color: rgb(109,109,109);
+  margin: 20px 30px;
+
+
+}
+.c1:hover {
+  transform: scale(1.1); 
+  outline: none; 
+}
+.c2:hover {
+  transform: scale(1.1); 
+  outline: none; 
+}
+.c3:hover {
+  transform: scale(1.1); 
+  outline: none; 
+}
+.footer{
+  background-color:#ffe5b4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color:#333333;
+  height: 50vh;
+  margin-top: 10rem;
+}
+.footer_card-title{
+  font-family: var(--main-font);
+}
+.footer_car-info{
+  font-family: var(--secondary-font);
+  line-height:2rem;
+}
+
+
+
